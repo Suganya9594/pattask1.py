@@ -1,0 +1,10 @@
+def is_palindrome(input_string):
+    # Remove spaces and convert to lowercase for uniformity
+    cleaned_string = input_string.replace(" ", "").lower()
+    # Check if the cleaned string is equal to its reverse
+    return cleaned_string == cleaned_string[::-1]
+
+# Example usage
+input_string = "nalan"
+result = is_palindrome(input_string)
+print(result)  # Output: True

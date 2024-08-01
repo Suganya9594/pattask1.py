@@ -1,0 +1,23 @@
+def count_vowels(s):
+    # Convert the string to lowercase to handle both uppercase and lowercase vowels
+    s = s.lower()
+    
+    # Initialize a dictionary to store the count of each vowel
+    vowels_count = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+    
+    # Initialize a variable to store the total number of vowels
+    total_vowels = 0
+    
+    # Iterate through each character in the string
+    for char in s:
+        if char in vowels_count:
+            vowels_count[char] += 1
+            total_vowels += 1
+    
+    return total_vowels, vowels_count
+
+string = "Guvi Geeks Network Private Limited"
+total_vowels, vowels_count = count_vowels(string)
+
+print("Total number of vowels:", total_vowels)
+print("Count of each vowel:", vowels_count)

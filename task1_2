@@ -1,0 +1,16 @@
+# Initialize the starting number
+num = 1
+
+# Iterate through the rows
+for i in range(1, 21):
+    # Print the numbers in the current row
+    for j in range(i):
+        print(num, end=' ')
+        num += 1
+        # Break the loop if the number exceeds 20
+        if num > 20:
+            break
+    print()  # Move to the next line
+    # Break the outer loop if the number exceeds 20
+    if num > 20:
+        break

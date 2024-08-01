@@ -1,0 +1,20 @@
+def most_frequent_character(input_string):
+    # Initialize a dictionary to store the frequency of each character
+    frequency = {}
+    
+    # Iterate through each character in the string
+    for char in input_string:
+        if char in frequency:
+            frequency[char] += 1
+        else:
+            frequency[char] = 1
+    
+    # Find the character with the maximum frequency
+    most_frequent = max(frequency, key=frequency.get)
+    
+    return most_frequent
+
+
+input_string = "worries not forever"
+result = most_frequent_character(input_string)
+print("Most frequent character:", result)

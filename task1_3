@@ -1,0 +1,11 @@
+def remove_vowels(input_string):
+    
+    vowels = "aeiouAEIOU"
+    
+    result = ''.join([char for char in input_string if char not in vowels])
+    
+    return result
+
+input_string = "Guvi Geeks Network Private Limited"
+output_string = remove_vowels(input_string)
+print(output_string)
